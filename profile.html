@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Model Profile | Model Showcase</title>
+  <meta name="description" content="View model profiles, including bio, services, locations and contact details. Book now for your next project." />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Load model data for dynamic profile -->
+  <script src="data/models.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <!-- Age confirmation modal -->
+  <div id="age-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="age-modal-title" aria-describedby="age-modal-description" hidden>
+    <div class="modal-content">
+      <h2 id="age-modal-title">Welcome</h2>
+      <p id="age-modal-description">This website contains content intended for adults. By continuing you confirm that you are at least 18 years old and accept our <a href="terms.html" class="link">Terms &amp; Conditions</a>.</p>
+      <div class="modal-actions">
+        <button id="confirm-age" class="btn primary">Continue</button>
+        <button id="decline-age" class="btn secondary">Leave site</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Top site header -->
+  <header class="top-header">
+    <div class="container">
+      <a href="index.html" class="logo">Model Showcase</a>
+      <nav class="nav">
+        <a href="about.html">About Us</a>
+        <a href="terms.html">Terms</a>
+        <a href="dmca.html">DMCA</a>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main content wrapper -->
+  <main id="main-content" tabindex="-1" aria-hidden="true">
+    <!-- Dynamic profile will be injected here -->
+    <div id="profile-content"></div>
+  </main>
+  
+  <footer class="site-footer">
+    <p>© 2025 Model Showcase. All rights reserved.</p>
+    <nav>
+      <a href="about.html">About Us</a> | 
+      <a href="terms.html">Terms &amp; Conditions</a> | 
+      <a href="dmca.html">DMCA</a>
+    </nav>
+  </footer>
+</body>
+</html>
